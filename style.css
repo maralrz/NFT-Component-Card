@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    font-family: "Outfit";
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 290px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 15px;
+    border-radius: 15px;
+}
+.test{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.test img{
+    max-width: 100%;
+}
+.test::before{
+    position: absolute;
+    background: hsla(178, 100%, 50%, 0.26);
+    top: 0;
+    left: 0;
+    bottom: 2px;
+    right: 0;
+    content: " ";
+    background-image: url("./images/icon-view.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.test:hover:before{
+    opacity: 1;
+}
+h4{
+    color: hsl(0, 0%, 100%);
+    margin: 15px 0px;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    margin-bottom: 15px;
+    
+}
+.avatar img{
+    width: 30px;
+    border-radius: 100%;
+    border:1px solid white;
+
+}
+a{
+    text-decoration: none;
+}
+.avatar span{
+    position: relative;
+    bottom: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    color:hsl(215, 51%, 70%) ;
+
+}
+.avatar a{
+    color: hsl(0, 0%, 100%);
+}
+.info{
+    display:flex ;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+    font-size: 14px;
+    color:hsl(215, 51%, 70%);
+}
+.clock img{
+    width: 15px;
+    position: relative;
+    top: 2px;
+   
+}
+.eth img{
+    width: 9px;
+   position: relative;
+   top: 2px;
+   margin-right: 5px;
+}
+.eth{
+    color:  hsl(178, 100%, 50%);
+}
